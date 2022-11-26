@@ -1,0 +1,28 @@
+--Create a store database
+
+CREATE TABLE oddities_store (id INTEGER PRIMARY KEY, name TEXT, quantity INTEGER, kind TEXT, price INTEGER);
+
+INSERT INTO oddities_store VALUES (1, "cow skull", 3, "bones", 75);
+INSERT INTO oddities_store VALUES (2, "articulated rabbit", 6, "taxidermy", 40);
+INSERT INTO oddities_store VALUES (3, "1900 dentistry set", 2, "medical", 100);
+INSERT INTO oddities_store VALUES (4, "replica art nouveau bat necklace", 1, "jewelry", 2);
+INSERT INTO oddities_store VALUES (5, "human femur", 1, "bones", 200);
+INSERT INTO oddities_store VALUES (6, "preserved pig fetus", 8, "animal", 25);
+INSERT INTO oddities_store VALUES (7, "fossilized reptile", 3, "fossils and rocks", 8);
+INSERT INTO oddities_store VALUES (8, "malachite", 30, "fossils and rocks", 5);
+INSERT INTO oddities_store VALUES (9, "rose quartz", 50, "fossils and rocks", 5);
+INSERT INTO oddities_store VALUES (10, "articulated python skeleton", 1, "taxidermy", 250);
+INSERT INTO oddities_store VALUES (11, "cobra blood earrings", 2, "jewelry", 40);
+INSERT INTO oddities_store VALUES (12, "mermaid", 1, "taxidermy", 600);
+INSERT INTO oddities_store VALUES (13, "Civil War era doctor kit", 1, "medical", 475);
+INSERT INTO oddities_store VALUES (14, "lobotomy instruction manual", 2, "medical", 45);
+INSERT INTO oddities_store VALUES (15, "deer hooves", 4, "bones", 20);
+
+--display the database ordered by price
+
+SELECT * FROM oddities_store ORDER BY price;
+
+--display the database ordered by items with prices higher than $100
+
+SELECT * FROM oddities_store WHERE price >100;
+
